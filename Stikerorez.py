@@ -46,13 +46,13 @@ class GriderMod(loader.Module):
 			reply_message = await message.get_reply_message()
 			data = await check_media(reply_message)
 			if isinstance(data, bool):
-				await utils.answer(message, "<code>Реплай на пикчу или стикер блять!</code>")
+				await utils.answer(message, "<code>Реплай на пикчу или стикер!</code>")
 				return
 		else:
-			await utils.answer(message, "`Реплай на пикчу или стикер блять`")
+			await utils.answer(message, "`Реплай на пикчу или стикер`")
 			return
 		
-		await message.edit("Режу ебать")
+		await message.edit("Чик чирикаю")
 		file = await self.client.download_media(data, bytes)
 		media = await griding(file)
 		await message.delete()
@@ -68,13 +68,13 @@ class GriderMod(loader.Module):
 			reply_message = await message.get_reply_message()
 			data = await check_media(reply_message)
 			if isinstance(data, bool):
-				await utils.answer(message, "<code>Реплай на пикчу или стикер блять!</code>")
+				await utils.answer(message, "<code>Реплай на пикчу или стикер!</code>")
 				return
 		else:
-			await utils.answer(message, "`Реплай на пикчу или стикер блять`")
+			await utils.answer(message, "`Реплай на пикчу или стикер`")
 			return
 		
-		await message.edit("Режу ебать")
+		await message.edit("Чик чирикаю")
 		file = await self.client.download_media(data, bytes)
 		media = await griding(file)
 		media = media[::-1]
